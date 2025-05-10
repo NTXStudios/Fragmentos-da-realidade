@@ -175,3 +175,79 @@ a.controle-linhas-ln {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    .quadrado-principal {
+        flex-direction: column;
+        height: auto;
+        display: flex;
+        width: 95%;
+    }
+
+    .parte-1, .parte-2 {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .main-text {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .Player {
+        margin: 0 auto;
+    }
+
+    .quadrado-inferior {
+        flex-direction: column;
+        display: flex;
+        height: auto;
+        width: 95%;
+    }
+
+    .controle-inferior {
+        flex-direction: column;
+    }
+
+    .controle-quadrados-menor,
+    .controle-linhas,
+    .controle-informacoes {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    .parte-1-informacoes,
+    .parte-2-informacoes {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-1-informacoes,
+    .div-2-informacoes {
+        height: 200px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .img-menor-1 {
+        height: 250px;
+    }
+
+    .text-overlay {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tt-effect {
+        font-size: 18px;
+    }
+}
