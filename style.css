@@ -1,3 +1,182 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #1A0026, #2A0038);
+}
+.container {
+    width: 100%;
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+}
+.menu {
+    width: 100%;
+    height: 55px;
+    display: flex;
+}
+.menu-total {
+    justify-content: center;
+}
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.loc-site {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.loc-site:hover {
+    display: inline-block;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}
+.quadrado-principal {
+    width: 87%;
+    height: 300px;
+    background-color: #333344;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.parte-1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+.parte-2 {
+    width: 50%;
+    height: 100%;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Player {
+    margin-top: 15px;
+    margin-left: 50%;
+}
+.main-text {
+    margin-left: 50px;
+    margin-top: 80px;
+    text-align: left;
+}
+.quadrado-inferior {
+    width: 87%;
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.controle-inferior {
+    display: flex;
+    border-radius: 10px;
+}
+.linha-1, .linha-2 {
+    display: flex;
+}
+.img-menor-1 {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.controle-quadrados-menor {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.controle-linhas {
+    width: 25%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.button-quadrado-inferior {
+    width: 90%;
+    text-decoration: none;
+    color: white;
+    padding: 30px 80px;
+    border-radius: 10px;
+}
+a.controle-linhas-ln {
+    background-color: aqua;
+    width: 90%;
+    text-decoration: none;
+    color: white;
+    padding: 20px 80px;
+    border-radius: 10px;
+}
+.controle-informacoes {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+.parte-1-informacoes {
+    display: flex;
+    width: 44%;
+    justify-content: center;
+    align-items: center;
+}
+.parte-2-informacoes {
+    display: flex;
+    width: 56%;
+    flex-direction: column;
+}
+.div-1-informacoes,
+.div-2-informacoes {
+    border-radius: 8px;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.hover-effect {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.hover-effect img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+    display: block;
+}
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+}
+.hover-effect:hover .text-overlay {
+    opacity: 0;
+}
+.tt-effect {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+}
+
+
 @media (max-width: 768px) {
     .container {
         height: auto;
